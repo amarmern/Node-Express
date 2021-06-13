@@ -1,7 +1,7 @@
 const express = require('express');
 const {
   getPlaceById,
-  getPlaceByUserId,
+  getPlacesByUserId,
   createPlace,
   updatePlace,
   deletePlace,
@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.get('/:pid', getPlaceById);
 
-router.get('/user/:uid', getPlaceByUserId);
+router.get('/user/:uid', getPlacesByUserId);
 
 router.post('/', createPlace);
 
